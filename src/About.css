@@ -1,0 +1,70 @@
+/*
+=============== 
+About
+===============
+*/
+.about-container {
+  display: flex;
+  justify-content: flex-end;
+}
+#about-text {
+  flex-basis: 50%;
+  background-color: #ebd993;
+  margin-top: 20vh;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 0.95em;
+  border-radius: 5px;
+}
+#about-shortcut {
+  text-align: center;
+  font-family: 'Sanchez', serif;
+  font-size: 3em;
+}
+#about-text b {
+  font-size: 1.5em;
+  color: #358540;
+}
+#about-text p {
+  font-size: 1.2em;
+  margin: 10px 10px;
+  color: #000000;
+}
+
+/*
+=============== 
+Contact
+===============
+*/
+.contact-wrapper {
+  text-align: center;
+}
+.contact-wrapper h3 {
+  font-family: 'Sanchez', serif;
+}
+.contact-wrapper a:link {
+  font-size: 1.5em;
+  color: #358540;
+}
+.contact-wrapper a:hover {
+  text-decoration: underline;
+}
+.contact-wrapper a:visited {
+  color: #358540;
+}
+
+/*
+=============== 
+Profile LInks
+===============
+*/
+.contact-social-icon-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 35px;
+}
+.contact-social-icon:hover {
+  transform: scale(1.05);
+}

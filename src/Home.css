@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Roboto&family=Sanchez&display=swap');
+
+section {
+  height: 100vh;
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+  height: 100vh;
+  background-color: rgba(89, 55, 60, 0.4);
+  z-index: -1;
+}
+
+.hero-text-container {
+  padding-top: 65vh;
+  padding-left: 50%;
+}
+.hero-text {
+  color: #f2f3f4;
+  font-family: 'Bevan', cursive;
+  margin-bottom: 0.75rem;
+}

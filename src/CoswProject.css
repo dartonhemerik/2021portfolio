@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Roboto&family=Sanchez&display=swap');
+
+.site {
+  display: flex;
+  /* min-height: 100vh; */
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*
+=============== 
+Title
+===============
+*/
+
+.title {
+  text-align: center;
+  margin: 3rem 0rem;
+  font-family: 'Sanchez', serif;
+}
+.underline {
+  width: 6rem;
+  height: 0.25rem;
+  background: hsl(205, 78%, 60%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+=============== 
+Project Cards
+===============
+*/
+
+.projects-container {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 3rem 2rem;
+  justify-content: center;
+  flex: 1;
+}
+.projects-container a:link,
+.projects-container a:visited {
+  color: #fefefe;
+}
+.project {
+  max-width: 40rem;
+  min-height: 29rem;
+  background: #a64153;
+  border-radius: 2%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project-HC {
+  min-height: 28rem;
+}
+.project:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s linear;
+}
+
+.project h3 {
+  text-align: center;
+  padding: 0.75rem;
+  font-family: 'Sanchez', serif;
+}
+
+.project p {
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  color: #fefefe;
+}
+.project button {
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  color: #f3d55e;
+  font-size: 1rem;
+  cursor: pointer;
+  padding-left: 0.25rem;
+}
+
+/*
+=============== 
+Dropdown 'Check Out'
+===============
+*/
+
+.dropdown-content,
+.dropdown-content-HC {
+  display: block;
+  position: absolute;
+  margin-left: 350px;
+  padding: 0.64rem;
+  text-align: center;
+  background-color: #140404;
+  color: white;
+  max-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transform: translateY(-14px);
+  transform-origin: 0;
+  opacity: 0;
+  transition: transform 0.4s, opacity 0.1s;
+}
+.dropdown:hover .dropdown-content {
+  transform-origin: 0;
+  transform: translateY(-2px);
+  opacity: 1;
+}
+.dropdown:hover .dropdown-content-HC {
+  transform-origin: 0;
+  transform: translateY(-6px);
+  opacity: 1;
+}
+
+/*
+=============== 
+Project Image
+===============
+*/
+
+section img {
+  object-fit: cover;
+  width: 100%;
+  margin: 0.25rem 0rem;
+  transition: all 0.4s ease;
+}
+.project:hover img {
+  margin: 0.75rem 0rem;
+}
+
+/*
+=============== 
+Project Cards' Content
+===============
+*/
+
+.tools-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #d36678;
+  padding: 0.75rem;
+}
+p {
+  margin-bottom: 0;
+}
+
+/*
+=============== 
+Screen Size
+===============
+*/
+
+@media only screen and (min-width: 685px) {
+  .project {
+    min-height: 34rem;
+  }
+  .project-HC {
+    min-height: 32rem;
+  }
+  .dropdown-content,
+  .dropdown-content-HC {
+    margin-left: 525px;
+    transform: translateY(-26px);
+  }
+  .dropdown:hover .dropdown-content {
+    transform: translateY(-6px);
+  }
+  .dropdown:hover .dropdown-content-HC {
+    transform: translateY(-6px);
+  }
+}
