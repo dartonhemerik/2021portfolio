@@ -14,6 +14,11 @@ export const links = [
   },
   {
     id: 3,
+    url: '/projects-cosw30',
+    text: 'PHP Projects',
+  },
+  {
+    id: 4,
     url: '/about',
     text: 'about/contact',
   },
@@ -137,7 +142,7 @@ export const cosw200Projects = [
     url: 'https://hw7-jsvalidate.dartonhemerik.repl.co/',
     image: '/media/cosw200hw7.png',
     info:
-      'Form validation is taken further with JavaScript through checking character length, confirming that passwords match, and stating specific messages for invalid inputs. A counter is used to keep track of the remaining character allowed for the comment box',
+      'Form validation is taken further with JavaScript through checking character length, confirming that passwords match, and stating specific messages for invalid inputs. A counter is used to keep track of the remaining character allowed for the comment box.',
     tools: ['JS', 'HTML', 'CSS'],
   },
   {
@@ -193,5 +198,72 @@ export const cosw200Projects = [
     info:
       'A simple math and trivia program built purely in JavaScript. A tracker keeps count of the correct guesses and a different statement is provided at the end depending on the score.',
     tools: ['JS'],
+  },
+];
+
+export const cosw30Projects = [
+  {
+    id: 1,
+    title: 'Twitter-Clone',
+    url: 'https://dartonhemerik.com/cosw30/gp/layouts/index.php',
+    image: '/media/cosw30project.PNG',
+    info: 'A PHP site where users can post messages onto a feed that is only accessible through session management after user registration and logging in. Additionally, passwords are hashed for added security. Admin-only privileges include a user-edit page. All information is stored on a MySQL database and the site was styled with TailwindCSS.',
+    tools: ['PHP', 'MySQL', 'TailwindCSS'],
+  },
+  {
+    id: 2,
+    title: 'Cookies, Sessions and Security',
+    url: 'https://www.dartonhemerik.com/cosw30/hw8/index.php',
+    image: '/media/cosw30hw8.PNG',
+    info: 'Passwords are now secured using hashed passwords via PHP. Through session management users can now login and logout. Logged in users can view new pages. Pagination is also utilized to limit the number of users to 10 per page.',
+    tools: ['PHP', 'MySQL', 'CSS'],
+  },
+  {
+    id: 3,
+    title: 'CRUD System',
+    url: 'https://www.dartonhemerik.com/cosw30/hw7/index.php',
+    image: '/media/cosw30hw7.PNG',
+    info: 'Users can now edit user information by sending SQL queries to UPDATE the information on the MySQL database tables.',
+    tools: ['PHP', 'MySQL', 'CSS'],
+  },
+  {
+    id: 4,
+    title: 'PHP with MySQL',
+    url: 'https://www.dartonhemerik.com/cosw30/hw6/index.php',
+    image: '/media/cosw30hw6.PNG',
+    info: 'Learned how to connect to a MySQL database using PHP.',
+    tools: ['PHP', 'MySQL', 'CSS'],
+  },
+  {
+    id: 5,
+    title: 'Discord-Clone',
+    url: 'https://cosw-30-homework-5.dartonhemerik.repl.co/index.php',
+    image: '/media/cosw30hw5.PNG',
+    info: 'A Discord-themed landing page with user registration and login forms. However, not connected to a database.',
+    tools: ['PHP', 'CSS'],
+  },
+  {
+    id: 6,
+    title: 'Star Wars Ipsum Generator',
+    url: 'https://cosw-30-homework-4.dartonhemerik.repl.co/',
+    image: '/media/cosw30hw4.PNG',
+    info: 'An ipsum generator created using arrays, nested for loops, rand() functions, and user-generated paragraphs within PHP.',
+    tools: ['PHP', 'CSS'],
+  },
+  {
+    id: 7,
+    title: 'LBCC Calculator',
+    url: 'https://cosw-30-homework-3.dartonhemerik.repl.co/',
+    image: '/media/cosw30hw3.PNG',
+    info: 'A tuition calculator that takes user-inputted choices to determine tuition cost and then subtracts tuition cost through a scholarship that utilizes the rand() function.',
+    tools: ['PHP', 'CSS'],
+  },
+  {
+    id: 8,
+    title: 'Save The Rainforest',
+    url: 'https://cosw-30-homework-2.dartonhemerik.repl.co/contact.html',
+    image: '/media/cosw30hw2.PNG',
+    info: 'A contact form that accepts user-input and checks for empty fields. If/else statements are then used to determine the the outputted response.',
+    tools: ['PHP', 'CSS'],
   },
 ];
